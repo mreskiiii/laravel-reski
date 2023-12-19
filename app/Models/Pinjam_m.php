@@ -11,7 +11,7 @@ class Pinjam_m extends Model
 {
     use HasFactory;
 
-    protected $table = 'mst_Pinjam';
+    protected $table = 'mst_pinjam';
     protected $primaryKey = 'ID_Pinjam';
     public $timestamps = false;
 
