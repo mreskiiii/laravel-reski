@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.judul{
+    margin: auto;
+    text-align: center;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+.border {
+    border: 1px solid black;
+    background: aqua;
+    border-radius: 7em;
+}
+
+.border-edit {
+    border: 1px solid black;
+    background: rgb(26, 194, 56);
+    border-radius: 7em;
+    margin-right: 1em;
+}
+
+.border-delete {
+    border: 1px solid black;
+    background: rgba(239, 9, 9, 0.47);
+    border-radius: 7em;
+}
