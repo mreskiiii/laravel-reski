@@ -43,7 +43,7 @@ class PinjamController extends Controller
                 'optpinjam1' => Buku_m::pluck('Judul', 'ID_Buku')
             ];
         
-        return view('pinjam.add', $data);
+        return view('Pinjam.add', $data);
     }
     public function save(pinjam_m $pinjam, Request $request)
     {
