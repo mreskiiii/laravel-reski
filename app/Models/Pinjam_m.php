@@ -17,11 +17,11 @@ class Pinjam_m extends Model
 
     function get_records($criteria='')
     {
-        $result = self::select('mst_Pinjam.*', 'mst_anggota.Nama AS Nama_anggota', 'mst_buku.Judul AS Judul_Buku')
-        ->join('mst_anggota', 'mst_Pinjam.ID_Anggota', '=', 'mst_anggota.ID_Anggota')
-        ->join('mst_buku', 'mst_Pinjam.ID_Buku', '=', 'mst_buku.ID_Buku')
+        $result = self::select('mst_pinjam.*', 'mst_anggota.Nama AS Nama_anggota', 'mst_buku.Judul AS Judul_Buku')
+        ->join('mst_anggota', 'mst_pinjam.ID_Anggota', '=', 'mst_anggota.ID_Anggota')
+        ->join('mst_buku', 'mst_pinjam.ID_Buku', '=', 'mst_buku.ID_Buku')
         ->when($criteria, function ($query, $criteria) {
-            return $query->where('mst_Pinjam.ID_Pinjam', $criteria);
+            return $query->where('mst_pinjam.ID_Pinjam', $criteria);
         })
         ->get();
         return $result;
