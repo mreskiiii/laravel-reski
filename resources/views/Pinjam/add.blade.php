@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinjam Dulu Seratus :)</title>
+    <title>Pinjam Buku</title>
 </head>
 <body>
 @if ($errors->any())
